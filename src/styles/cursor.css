@@ -1,0 +1,59 @@
+.cursor-outer-ring {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(48, 148, 255, 0.8);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  margin: -25px 0 0 -25px; /* Center the ring */
+  mix-blend-mode: difference;
+  transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.2s ease-out;
+  will-change: transform;
+}
+
+.cursor-inner-ring {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(48, 148, 255);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  margin: -4px 0 0 -4px; /* Center the dot */
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+.cursor-outer-ring.active {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border-color: rgba(48, 148, 255, 1);
+}
+
+/* Hover effects for interactive elements */
+html a:hover ~ .cursor-outer-ring,
+button:hover ~ .cursor-outer-ring {
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
+  border-color: rgba(48, 148, 255, 0.5);
+}
+
+/* Hide default cursor */
+html {
+  cursor: none;
+}
+
+/* Show default cursor for touch devices */
+@media (hover: none) {
+  .cursor-outer-ring,
+  .cursor-inner-ring {
+    display: none !important;
+  }
+
+  html {
+    cursor: auto;
+  }
+}

@@ -1,0 +1,148 @@
+:root {
+  --background-color: 33, 33, 37;
+}
+::selection {
+  color: white;
+  background: #8c34ff7e;
+}
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(var(--background-color));
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #00000033;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#8d34ff, #5c74ff);
+  border-radius: 0px;
+}
+
+.hero,
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+.hero {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 15px,
+    #ffffff05 10px,
+    #ffffff05 20px
+  );
+  box-shadow: 0 0 80px rgb(var(--background-color)) inset;
+}
+.hero-text {
+  position: relative;
+}
+.hero-text .hero-box {
+  position: absolute;
+  height: 210%;
+  width: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.hero-text h1 {
+  font-size: 5rem;
+  margin: 0;
+  color: transparent;
+  background: linear-gradient(to right, #8d34ff, #5c74ff, #8d34ff, #5c74ff);
+  background-clip: text;
+  filter: drop-shadow(0 0 50px #000);
+  animation: gradient-animation 5s infinite, shadow-animation 5s infinite;
+  background-size: 300% 100%;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 0;
+  color: #ffffff75;
+  text-shadow: 0 0 50px #d7baff75;
+  animation: shadow-animation 5s infinite;
+}
+.hero-btn {
+  background-color: #8d34ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: #8d34ff 1px solid;
+  overflow: hidden;
+  transition: color 0.3s;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: transparent;
+  box-shadow: #8d34ff 0 0 8px inset, #8d34ff 0 0 8px;
+  /* text-shadow: #8D34FF 0 0 8px; */
+  align-self: flex-end;
+}
+@keyframes gradient-animation {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+@keyframes shadow-animation {
+  0% {
+    filter: drop-shadow(0 0 50px #8d34ff75);
+  }
+  50% {
+    filter: drop-shadow(0 0 50px #2b3da675);
+  }
+  100% {
+    filter: drop-shadow(0 0 50px #8d34ff75);
+  }
+}
+/* Mobile */
+@media screen and (max-width: 1100px) {
+  .character {
+    height: 50vh;
+  }
+  @media screen and (max-width: 710px) {
+    .character {
+      height: 40vh;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+    .card2 p {
+      font-size: 1rem;
+    }
+  }
+}

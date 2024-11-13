@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Main -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flamality</title>
+    <meta
+      name="description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Flamality.xyz/" />
+    <meta property="og:title" content="Flamality.xyz" />
+    <meta
+      property="og:description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+    <meta
+      property="og:image"
+      content="https://Flamality.xyz/images/anthony.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://Flamality.xyz/" />
+    <meta property="twitter:title" content="Flamality.xyz" />
+    <meta
+      property="twitter:description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+    <meta
+      property="twitter:image"
+      content="https://Flamality.xyz/images/anthony.png"
+    />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#ff0000" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://Flamality.xyz/images/anthony.png"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/aboutme.css" />
+    <link rel="stylesheet" href="styles/cursor.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <!-- JS -->
+    <script src="js/cursorv2.js" defer></script>
+    <script src="js/timeUpdate.js" defer></script>
+    <script src="js/anchor.js" defer></script>
+    <style>
+      #viewport-width {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        z-index: 1000;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="cursor-outer-ring"></div>
+      <div class="cursor-inner-ring"></div>
+      <div id="viewport-width" style="display: none;"></div>
+
+      <script>
+        function updateViewportWidth() {
+          const width = window.innerWidth;
+          document.getElementById(
+            "viewport-width"
+          ).textContent = `Viewport Width: ${width}px`;
+        }
+
+        // Initial call to display width on page load
+        updateViewportWidth();
+
+        // Update width when the window is resized
+        window.addEventListener("resize", updateViewportWidth);
+      </script>
+      <section class="hero">
+        <div class="content">
+          <img
+            src="images/anthony.png"
+            alt="Anthony figure"
+            class="character"
+          />
+          <div class="hero-text">
+            <h2>Hi! I'm</h2>
+            <h1>FLAMALITY</h1>
+            <div>
+                          <!-- <h3><span class="hero-frontend-text">Front-end</span> Developer</h3> -->
+            <button onclick="location.href='/#about'" class="hero-btn">
+              Learn more
+            </button>
+            </div>
+          </div>
+          <div class="arrows">
+            <p class="arrow" style="--i: 0s">&vee;</p>
+            <p class="arrow" style="--i: 0.4s">&vee;</p>
+            <p class="arrow" style="--i: 0.8s">&vee;</p>
+            <p class="arrow" style="--i: 1.2s">&vee;</p>
+            <p class="arrow" style="--i: 1.6s">&vee;</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="seperator">
+          <span>About me</span>
+        </div>
+        <div class="about-container">
+          <div class="card card1">
+            <h2>Introduction</h2>
+            <p>
+              Hello 👋, my name is <b>Flamality</b>, but feel free to call me
+              Remi! I'm a website and game developer with a strong dedication to
+              crafting intuitive and engaging user experiences. With a
+              background in Front-End development and UX design, my primary
+              focus is on creating seamless, visually appealing, and
+              user-friendly interfaces that users will love to interact with.<br /><br />
+              While my expertise lies in building dynamic, responsive websites
+              and applications, I also have experience working on Back-End
+              development, allowing me to deliver well-rounded solutions. I am
+              driven by the belief that great design is more than just
+              aesthetics—it's about understanding user behavior and creating
+              interfaces that make their experience smoother, faster, and more
+              enjoyable.<br /><br />
+              Whether it's developing custom websites or working on interactive
+              game elements, I bring creativity, attention to detail, and a
+              commitment to delivering high-quality results. Feel free to
+              explore my work and reach out—I'm always excited to collaborate
+              and create something amazing together!
+            </p>
+          </div>
+          <div class="card card2">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="skill">
+                <h3>Languages</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>JSX <span class="tag">React / React Native</span></li>
+                  <li>LUAU <span class="tag">Roblox Studio</span></li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>Backend</h3>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Firebase</li>
+                  <li>Appwrite</li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>UI/UX Design</h3>
+                <ul>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>Project Management</h3>
+                <ul>
+                  <li>Trello</li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>Tools</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>VS Code</li>
+                  <li>Command line</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card card3">
+            <h2>Personal Information</h2>
+            <ul>
+              <li>Pronouns: <span class="tag">Any</span></li>
+              <li>
+                Sexuality:
+                <span class="tag"
+                  ><img src="images/flags/pan.png" class="flag" /> Pan</span
+                >
+              </li>
+              <li>
+                Timezone:
+                <span class="tag"
+                  >EST <span class="subtag">/ UTC−05:00</span></span
+                >
+              </li>
+              <li>Currently <span class="tag" id="est-time"></span> for me</li>
+            </ul>
+            <h2>Links</h2>
+            <ul class="links">
+              <li>
+                <a href="https://github.com/Flamality" target="_blank"
+                  ><img src="images/icons/github.png" class="icon" /> GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://youtube.com/@UrFlamality" target="_blank"
+                  ><img src="images/icons/youtube.png" class="icon" />
+                  Youtube</a
+                >
+              </li>
+              <li>
+                <a href="https://discord.gg/wqNtVJ6rXh" target="_blank"
+                  ><img src="images/icons/discord.png" class="icon" />
+                  Discord</a
+                >
+              </li>
+              <li>
+                <a href="https://tiktok.com/@flamality" target="_blank"
+                  ><img src="images/icons/tiktok.png" class="icon" /> Tiktok</a
+                >
+              </li>
+              <li>
+                <a href="https://guilded.gg/u/flamality" target="_blank"
+                  ><img src="images/icons/guilded.png" class="icon" />
+                  Guilded</a
+                >
+              </li>
+              <li>
+                <a href="mailto:urflamality@gmail.com" target="_blank"
+                  ><img src="images/icons/gmail.png" class="icon" /> Email</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card4 card">
+          <p>Code Imagine Design Build Develop Innovate Challenge Solve&nbsp;</p>
+          <p>Code Imagine Design Build Develop Innovate Challenge Solve&nbsp;</p>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="seperator">
+          <span>Projects</span>
+        </div>
+        <div class="project-container">
+          <div class="project">
+            <div class="project-info">
+              <h2 class="project-title">adrionic.xyz</h2>
+              <p class="project-desc">
+                A website made from straight HTMl, CSS, and JavaScript made for
+                a content creator in my free time. The website includes many
+                different pages, documents, and lots of information about the
+                content creator.
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="images/projects/adrionicxyz.png" alt="Project Image" />
+            </div>
+            <p class="project-link">
+              <a href="https://adrionic.xyz" target="_blank">Open project</a>
+            </p>
+          </div>
+          <div class="project">
+            <div class="project-info">
+              <h2 class="project-title">Flamalite</h2>
+              <p class="project-desc">
+                A communications app inspired by chat platforms like Discord and Guilded, made with React. Currently still in the start of development phase.
+              </p>
+            </div>
+            <div class="project-image">
+              <img src="images/projects/cchatflamalityxyz.png" alt="Project Image" />
+            </div>
+            <p class="project-link">
+              <a href="https://chat.flamality.xyz" target="_blank">Open project</a>
+            </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="seperator">
+          <span>Contact</span>
+        </div>
+        <div class="contact-section">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xqakbkra"
+            method="POST"
+          >
+            <h2>Get in touch</h2>
+            <label>
+              Email
+              <input required type="email" name="email" />
+            </label>
+            <label>
+              Name
+              <input required type="text" name="name" />
+            </label>
+            <label>
+              Message
+              <textarea required name="message"></textarea>
+            </label>
+            <button class="contact-form-submit" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
