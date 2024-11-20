@@ -113,6 +113,7 @@
   color: #ffffff75;
   text-transform: uppercase;
 }
+
 .hero-btn {
   background-color: #8d34ff;
   color: white;
@@ -194,6 +195,13 @@
     }
     .card2 p {
       font-size: 1rem;
+    }
+    .location-tag {
+      font-size: 0.5rem;
+    }
+    .location-tag-container img {
+      width: 0.5rem;
+      height: 0.5rem;
     }
   }
 }
