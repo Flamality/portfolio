@@ -1,0 +1,102 @@
+.skills-container {
+  margin: 20px 20px;
+  background-color: #00000025;
+  border: 1px solid #b0b0b025;
+  border-radius: 10px;
+  padding: 15px;
+}
+.skills-container h2 {
+  width: fit-content;
+  color: transparent;
+  background: linear-gradient(to right, #8d34ff, #5c74ff);
+  background-clip: text;
+  filter: drop-shadow(0 0 50px #000);
+  margin-bottom: 10px;
+}
+.skills p,
+.skills li,
+.skills li a {
+  color: #ffffffa6;
+  font-size: 1rem;
+}
+.skills ul li {
+  margin-bottom: 0px;
+  width: fit-content;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.skills {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.skillbar {
+  width: 100%;
+  height: 12px;
+  background-color: #333;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.skillbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sb1::before {
+  width: 10%;
+  background: linear-gradient(90deg, #d13c3c, #e06c6c);
+}
+
+.sb2::before {
+  width: 40%;
+  background: linear-gradient(90deg, #e07f47, #e4a573);
+}
+
+.sb3::before {
+  width: 60%;
+  background: linear-gradient(90deg, #e0b400, #e0c274);
+}
+
+.sb4::before {
+  width: 80%;
+  background: linear-gradient(90deg, #28a745, #6cbf6f);
+}
+
+.sb5::before {
+  width: 100%;
+  background: linear-gradient(90deg, #00b300, #66cc66);
+}
+
+.skillbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #d3d3d3;
+  text-decoration: underline;
+}

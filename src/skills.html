@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Main -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <meta
+      name="description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Flamality.xyz/" />
+    <meta property="og:title" content="Flamality.xyz" />
+    <meta
+      property="og:description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://Flamality.xyz/" />
+    <meta property="twitter:title" content="Flamality.xyz" />
+    <meta
+      property="twitter:description"
+      content="A youtuber, game developer, web developer, and more. All in one."
+    />
+    <meta
+      property="twitter:image"
+      content="https://Flamality.xyz/images/anthony.png"
+    />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#ff0000" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://Flamality.xyz/images/anthony.png"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/aboutme.css" />
+    <link rel="stylesheet" href="styles/cursor.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/full-skills.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- JS -->
+    <script src="js/cursorv2.js" defer></script>
+    <script src="js/timeUpdate.js" defer></script>
+    <script src="js/anchor.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+  </head>
+  <body>
+
+    <div id="root">
+      <div class="cursor-outer-ring"></div>
+      <div class="cursor-inner-ring"></div>
+      <div id="viewport-width" style="display: none;"></div>
+
+      <script>
+        function updateViewportWidth() {
+          const width = window.innerWidth;
+          document.getElementById(
+            "viewport-width"
+          ).textContent = `Viewport Width: ${width}px`;
+        }
+
+        // Initial call to display width on page load
+        updateViewportWidth();
+
+        // Update width when the window is resized
+        window.addEventListener("resize", updateViewportWidth);
+      </script>
+
+
+      <section class="skills-container">
+        <h2>Full list of skills</h2>
+        <div class="skills">
+  <!-- Frontend Development -->
+  <div class="skill">
+    <h3>Frontend Development</h3>
+    <ul>
+      <li><i class="devicon-html5-plain"></i> HTML</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-css3-plain"></i> CSS</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-typescript-plain"></i> TypeScript</li>
+      <div class="skillbar sb3"></div>
+      <li><i class="devicon-react-plain"></i> JSX</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-tailwindcss-original"></i> Tailwind</li>
+      <div class="skillbar sb4"></div>
+    </ul>
+  </div>
+
+  <!-- Scripting & Markup -->
+  <div class="skill">
+    <h3>Scripting & Markup</h3>
+    <ul>
+      <li><i class="devicon-lua-plain"></i> LUA</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-lua-plain"></i> LUAU</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-markdown-plain"></i> Markdown</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-azuresqldatabase-plain"></i> SQL</li>
+      <div class="skillbar sb2"></div>
+    </ul>
+  </div>
+
+  <!-- Backend Development -->
+  <div class="skill">
+    <h3>Backend Development</h3>
+    <ul>
+      <li><i class="devicon-nodejs-plain"></i> Node.js</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-firebase-plain"></i> Firebase</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-appwrite-plain"></i> Appwrite</li>
+      <div class="skillbar sb3"></div>
+      <li><i class="devicon-discordjs-plain"></i> Discord.js</li>
+      <div class="skillbar sb3"></div>
+    </ul>
+  </div>
+
+  <!-- Development Tools -->
+  <div class="skill">
+    <h3>Development Tools</h3>
+    <ul>
+      <li><i class="devicon-git-plain"></i> Git</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-github-original"></i> GitHub</li>
+      <div class="skillbar sb3"></div>
+      <li><i class="devicon-vscode-plain"></i> VS Code</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-npm-original-wordmark"></i> NPM</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-bash-plain"></i> Command Line</li>
+      <div class="skillbar sb3"></div>
+      <li><i class="devicon-replit-original"></i> Replit</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-codepen-original"></i> CodePen</li>
+      <div class="skillbar sb4"></div>
+    </ul>
+  </div>
+
+  <!-- Design & Collaboration Tools -->
+  <div class="skill">
+    <h3>Design & Collaboration Tools</h3>
+    <ul>
+      <li><i class="devicon-figma-plain"></i> Figma</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-trello-plain"></i> Trello</li>
+      <div class="skillbar sb5"></div>
+      <li><i class="devicon-canva-plain"></i> Canva</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-stackoverflow-plain"></i> Stack Overflow</li>
+      <div class="skillbar sb4"></div>
+    </ul>
+  </div>
+
+  <!-- Mobile Development -->
+  <div class="skill">
+    <h3>Mobile Development</h3>
+    <ul>
+        <li><i class="devicon-react-plain"></i> React Native</li>
+      <div class="skillbar sb4"></div>
+      <li><i class="devicon-flutter-plain"></i> Flutter</li>
+      <div class="skillbar sb3"></div>
+    </ul>
+  </div>
+</div>
+
+            <p>Updated 11/20/2024<br><a href="/#about">Back to portfolio</a></p>
+      </section>
+  </body>
+</html>
