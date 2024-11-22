@@ -125,3 +125,19 @@
   text-decoration: none;
   text-decoration: underline;
 }
+
+.project-skill {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.project-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
