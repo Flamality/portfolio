@@ -25,10 +25,12 @@
   filter: drop-shadow(0 0 50px #000);
   margin-bottom: 10px;
 }
+
 .card p,
 .card li,
 .card li a {
   color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
 }
 .card1 {
   grid-column: 1;
@@ -37,6 +39,7 @@
 .card2 {
   grid-column: 1;
   grid-row: 2;
+  transition: all 0.3s;
 }
 .card3 {
   grid-column: 2;
